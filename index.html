@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+      <!-- This is a simple blog using the HTML5 boilerplate template as a start point!  -->
+      <!--
+            Pretty curious how this is going to go.  It seems a little bit like overkill now,
+            because it probably is, but I think it would be good to get used to using such a thing
+            if it's a pretty standard practice among people who build things mostly by hand.  And
+            I can't deny that it seems pretty powerful.
+      -->
+
+        <header class="site-header">
+          <h1>Simple Blog</h1>
+        </header>
+        <main>
+
+          <article class="blog-post">
+            <header class="blog-post-header clearfix">
+              <h2 class="blog-post-title">Figures</h2>
+              <time class="blog-post-time" datetime="2017-09-26T22:40" pubdate>September 26, 2017 @ 22:40</time>
+            </header>
+            <main class="blog-post-main">
+              <figure>
+                <img src="img/bae.PNG" alt="">
+                <figcaption>Ang, the one and only.</figcaption>
+              </figure>
+
+              <p>The above is a figure tag.  Herrr is a link to the spec: <br> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">HTML5 Figure</a>
+              </p>
+              <p>
+                We can use this for images, SVGs, code snippets, charts, or other visual things.  They usually have captions on them for clarity.
+              </p>
+            </main>
+            <footer class="blog-post-footer">
+              <p>Still want to put social buttons here.  Not gonna do it yet. :P</p>
+            </footer>
+          </article>
+
+          <article class="blog-post">
+            <header class="blog-post-header clearfix">
+              <h2 class="blog-post-title">Init Post!</h2>
+              <time class="blog-post-time" datetime="2017-09-26T20:49" pubdate>September 26, 2017 @ 20:49</time>
+            </header>
+            <main class="blog-post-main">
+              <p>This is the main content of the blog post! It is an article tag.  Herrr's the link:
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">HTML5 Article</a>
+              </p>
+              <p>
+                This is a really interesting tag. Apparently, its symantic meaning is: "a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry."
+              </p>
+              <p>
+                    Sounds perfect, right?...
+              </p>
+              <p>In the upper right is a time element.  Herr is that link too: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">HTML5 Time</a>
+              </p>
+              <p>
+                This time element allows the browser to understand that the value inside of the "datetime" parameter is the true date and time associated with this article. I'm still not quite sure what the use of that is.It also seems pretty manual.. maybe there is a way to use it dynamically or something.
+              </p>
+              <p>The "pubdate" parameter is a boolean that tells the browser even further that this is the date at which the article was actually published.  Not sure what I can do with that yet.
+              </p>
+            </main>
+            <footer class="blog-post-footer">
+              <!-- Maybe we can put some social buttons here or something, idk.  -->
+              <p>Maybe some social buttonzz?...</p>
+            </footer>
+          </article>
+
+          <!--
+
+          article.blog-post>(header.blog-post-header.clearfix>h2.blog-post-title+time.blog-post-time)+main.blog-post-main+(footer.blog-post-footer>p)
+
+        -->
+
+
+        </main>
+        <footer>
+
+        </footer>
+
+
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>

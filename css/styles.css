@@ -1,0 +1,36 @@
+.site-header {
+  width: 60%;
+  margin: 60px auto;
+  text-align: center;
+  font-family: courier;
+}
+
+/*
+  I think it's probably a better idea to use class selectors instead of ordered tag types.  That way it's more explicit and more portable too.
+  I think there might be performance benefits by sticking with class selectors too.
+*/
+.blog-post {
+  width: 55%;
+  margin: 30px auto;
+  font-family: courier;
+  box-shadow: 1px 1px 3px #888;
+  padding: 25px 40px;
+}
+
+.blog-post-header {
+  padding: 0 0 0 0;
+}
+
+.blog-post-title {
+  float: left;
+}
+
+.blog-post-time {
+  float: right;
+  padding: 25px 0;
+}
+
+.blog-post-main img {
+  width:auto;
+  height: 400px;
+}
