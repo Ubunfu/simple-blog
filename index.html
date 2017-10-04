@@ -14,6 +14,9 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/styles.css">
+
+        <!--  Font-Awesome Icon pack-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
 
@@ -35,6 +38,55 @@
           article.blog-post>(header.blog-post-header.clearfix>h2.blog-post-title+time.blog-post-time)+main.blog-post-main+(footer.blog-post-footer>p)
 
         -->
+          <article class="blog-post">
+            <header class="blog-post-header clearfix">
+              <h2 class="blog-post-title">Form Attributes</h2>
+              <time class="blog-post-time" datetime="2017-10-03T21:07">October 3, 2017 @ 21:07</time>
+            </header>
+            <main class="blog-post-main">
+              <section>
+                <h4>Placeholders:</h4>
+                Placeholders are the pieces of grey, semi-transparent text that show in the background of text boxes that disappears when you start typing something inside of it.  It is used kinda like a hint as to what to do there. For example:
+                <p>
+                  <form class="" action="index.html" method="post">
+                    <input type="text" name="" value="" placeholder="Type Text Here!" />
+                  </form>
+                </p>
+              </section>
+              <section>
+                <h4>Patterns:</h4>
+                Patterns are basically just regex-based input validation directly in the HTML.  Exempli Gratia:
+                <p>
+                  <form class="" action="index.html" method="post">
+                    <input type="text" name="" value="" placeholder="Only alphas allowed!" pattern="[a-z][A-Z]" />
+                    <button name="button">Submit</button>
+                  </form>
+                </p>
+              </section>
+              <section>
+                <h4>Required:</h4>
+                Use the "required" attribute on an input element to make it required!  Like this:
+                <p>
+                  <form class="" action="index.html" method="post">
+                    <input type="text" name="" value="" placeholder="You better fill this out..." required/>
+                    <button name="button">Submit</button>
+                  </form>
+                </p>
+              </section>
+            </main>
+            <footer class="blog-post-footer">
+              <p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-reddit"></a>
+              </p>
+              <p class="social-acknkowledgement">
+                Font Awesome by Dave Gandy - http://fontawesome.io
+              </p>
+            </footer>
+          </article>
+
+
           <article class="blog-post">
             <header class="blog-post-header clearfix">
               <h2 class="blog-post-title">Forms & Input Types MEGAPOST!</h2>
