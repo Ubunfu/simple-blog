@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta id="description" content="">
+        <meta id="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
@@ -30,6 +30,141 @@
         </header>
         <main>
 
+          <!--
+
+          article.blog-post>(header.blog-post-header.clearfix>h2.blog-post-title+time.blog-post-time)+main.blog-post-main+(footer.blog-post-footer>p)
+
+        -->
+          <article class="blog-post">
+            <header class="blog-post-header clearfix">
+              <h2 class="blog-post-title">Forms & Input Types MEGAPOST!</h2>
+              <time class="blog-post-time" datetime="2017-10-01T21:21">October 1, 2017 @ 21:21</time>
+            </header>
+            <main class="blog-post-main">
+              <section>
+                <p>Simple form, lots of input.  Go!</p>
+                <form class="" id="my-form" action="index.html" method="post">
+                  <p>
+                    <label for="number">Number: </label>
+                    <input type="number" id="number" value="3" min="0" max="10" step="3" />
+                    <ul>
+                      <li>Min</li>
+                      <li>Max</li>
+                      <li>Value: The start value.</li>
+                      <li>Step: The increment size.  Values within the step are invalid.</li>
+                    </ul>
+                  </p>
+                  <p>
+                    <label for="range">Range: </label>
+                    <input type="range" id="range" value="20" min="0" max="100" step="20" />
+                    <ul>
+                      <li>Min</li>
+                      <li>Max</li>
+                      <li>Value: The start position of the slider.</li>
+                      <li>Step: Same as above.</li>
+                    </ul>
+                  </p>
+                  <p>
+                    <label for="date">Date: </label>
+                    <input type="date" id="date" value="2017-10-09" min="2017-01-01" max="2017-12-31" />
+                    <ul>
+                      <li>Min: the earliest date you're allowed to pick.</li>
+                      <li>Max: The latest date you're allowed to pick.</li>
+                      <li>Value: The initial date shown by the date widget thing.</li>
+                    </ul>
+                  </p>
+                  <p>
+                    <label for="color">Color: </label>
+                    <input type="color" id="color" value="#66ee66" />
+                    <p>
+                      When you submit your form, this field will produce the hex color code that you selected with the color picker.
+                    </p>
+                    <ul>
+                      <li>Value: The starting color of the color picker widget.</li>
+                    </ul>
+                  </p>
+                  <p>
+                    <label for="list">List: </label>
+                    <input type="list" id="list" list="datalist" />
+                    <datalist id="datalist">
+                      <option value="value 1" label="label 1"></option>
+                      <option value="value 2" label="label 2"></option>
+                      <option value="value 3" label="label 3"></option>
+                    </datalist>
+                    <p>
+                      When you start typing in the box, it will auto-filter out the options defined in your list! Typed values not in the list are allowed.
+                    </p>
+                    <ul>
+                      <li>List: The data list that will populate this list field.</li>
+                    </ul>
+                  </p>
+                </form>
+                <form class="" id="email-form" action="index.html" method="post">
+                  <p>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" />
+                    <button name="email-button">Submit Email</button>
+                    <p>
+                      Just a normal text box but with extra validation (on form submission) to make sure the input is formatted like a valid email address.  Also, mobile devices may be able to recognize this as an email field and pop special versions of the keyboard to better accomodate this input type.
+                    </p>
+                  </p>
+                </form>
+                <form class="" id="url-form" action="index.html" method="post">
+                  <p>
+                    <label for="url">URL: </label>
+                    <input type="url" id="url" />
+                    <button name="url-button">Submit URL</button>
+                    <p>
+                      Another normal text box that will do validation on the input at form submission to make sure it's formatted like a valid URL.
+                    </p>
+                  </p>
+                </form>
+                <form class="" id="tel-form" action="index.html" method="post">
+                  <p>
+                    <label for="tel">Telephone: </label>
+                    <input type="tel" id="tel" list="tel-list" />
+                    <datalist id="tel-list">
+                      <option value="123-456-7890"></option>
+                      <option value="123-456-7891"></option>
+                      <option value="123-456-7892"></option>
+                    </datalist>
+                    <button name="tel-button">Submit Telephone</button>
+
+                    <p>
+                      Used for entering a phone number.  Can be useful for mobile devices for popping special keyboards, but there is no standard validation since the formats vary so much worldwide
+                    </p>
+                    <p>
+                      Can be used with a datalist to suggest values Pretty sure you can do that with most of these.
+                    </p>
+                  </p>
+                </form>
+                <form class="" id="search-form" action="index.html" method="post">
+                  <p>
+                    <label for="search">Search: </label>
+                    <input type="search" id="search" />
+                    <button name="search-button">Submit Search</button>
+                    <p>
+                      Designed for entering search queries... Typically browsers will have a little "x" at the end of the box for removing the query.  And sometimes browsers will store previous queries across domains, and include them as autocomplete options in subsequent queries.
+                    </p>
+                  </p>
+                </form>
+                <form class="" id="pass-form" action="index.html" method="post">
+                  <p>
+                    <label for="pass">Password: </label>
+                    <input type="password" id="pass" />
+                    <button name="pass-button">Submit Password</button>
+                    <p>
+                      Text is obscured from view while typing.  On mobile devices, one character is often displayed for a moment after pressing, as virtual keyboards are very small end error-prone.
+                    </p>
+                  </p>
+                </form>
+              </section>
+            </main>
+            <footer class="blog-post-footer">
+              <p>ya know what, fuck social buttons.  who needs 'em.</p>
+            </footer>
+          </article>
+
           <article class="blog-post">
             <header class="blog-post-header clearfix">
               <h2 class="blog-post-title">Figures</h2>
@@ -50,7 +185,7 @@
             <footer class="blog-post-footer">
               <p>Still want to put social buttons here.  Not gonna do it yet. :P</p>
             </footer>
-          </article>
+          </article> 
 
           <article class="blog-post">
             <header class="blog-post-header clearfix">
@@ -81,11 +216,7 @@
             </footer>
           </article>
 
-          <!--
 
-          article.blog-post>(header.blog-post-header.clearfix>h2.blog-post-title+time.blog-post-time)+main.blog-post-main+(footer.blog-post-footer>p)
-
-        -->
 
 
         </main>
