@@ -4,12 +4,21 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
+    Ryan Allen —- Developer —— 
 
 # THANKS
 
     <name>
+    Dave Gandy —- Font Awesome
+    Scott Tolinski —— Level Up Tutorials
+
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3
+    HTML5
+    Apache Server Configs
+    jQuery
+    Modernizr
+    Normalize.css
+    Font Awesome
