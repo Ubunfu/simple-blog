@@ -40,6 +40,44 @@
         -->
           <article class="blog-post">
             <header class="blog-post-header clearfix">
+              <h2 class="blog-post-title">Audio</h2>
+              <time class="blog-post-time" datetime="2017-10-07T00:42" pubdate>October 7, 2017 @ 00:42</time>
+            </header>
+            <main class="blog-post-main">
+              <section>
+                Use these options with audio:
+                <ul>
+                  <li>loop (boolean)</li>
+                  <li>controls (boolean)</li>
+                  <li>autoplay (boolean)</li>
+                </ul>
+              </section>
+              <section>
+                <audio controls autoplay loop>
+                  <source src="res/Dive Break.wav"></source>
+                </audio>
+              </section>
+              <section>
+                <p>
+                  You can use
+                  <a href="#"></a>Miro Video Converter from the last scene to convert between video formats for the same type of experience we just discussed for video.
+                </p>
+              </section>
+            </main>
+            <footer class="blog-post-footer">
+              <p>
+                <a href="https://facebook.com" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://twitter.com" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://reddit.com" class="fa fa-reddit" target="_blank"></a>
+              </p>
+              <p class="social-acknkowledgement">
+                Font Awesome by Dave Gandy - http://fontawesome.io
+              </p>
+            </footer>
+          </article>
+
+          <article class="blog-post">
+            <header class="blog-post-header clearfix">
               <h2 class="blog-post-title">Video</h2>
               <time class="blog-post-time" datetime="2017-10-05T20:56" pubdate>October 5, 2017 @ 20:56</time>
             </header>
@@ -48,17 +86,38 @@
                 <p>
                   Use these attributes in the video tag:
                   <ul>
-                    <li>controls : Show on-screen video controls.</li>
-                    <li>autoplay : Video plays automatically on page-load.</li>
+                    <li>controls (boolean) : Show on-screen video controls.</li>
+                    <li>autoplay (boolean) : Video plays automatically on page-load.</li>
                     <li>poster : Path to a placeholder image before the video plays.</li>
+                    <li>preload (boolean) : If set, browser will try to automatically start downloading the video when the page loads.  Does not work on mobile browsers b/c mobile data plans. :(</li>
+                    <li>tabindex : Zero-based integer index.  Allows user to tab through a page full of stuff and use the keyboard to control the video.</li>
+                    <li>loop (boolean) : Auto-loops the video.  Forever...ever...ever...</li>
+                    <li>muted (boolean) : Video will not have any sound.</li>
                   </ul>
                 </p>
-                <video controls poster="tile-wide.png">
+              </section>
+              <section>
+                <video autoplay muted loop>
                   <source src="res/hd0992.mov"></source>
                   <!--  Put different formats here to increase browser support! -->
                   <!-- <source src="res/hd0992.mov"></source> -->
                   <!-- <source src="res/hd0992.mov"></source> -->
                 </video>
+              </section>
+              <section>
+                <p>
+                  Check out
+                  <a href="http://www.nytimes.com/projects/2012/snow-fall/#/?part=tunnel-creek" target="_blank">this cool site</a>
+                  on the NY Times for some HTML 5 video inspiration.
+                </p>
+                <p>
+                  <h4>Video For Everyone:</h4>
+                  <a href="http://v4e.thewikies.com/" target="_blank">Video For Everyone</a> is a web service which will generate HTML 5 snipped that includes a flash fallback. The link to the supporting flash runtime files are hosted links, so for mission critical sites it would be wise to host them locally.
+                </p>
+                <p>
+                  <h4>Miro Video Converter:</h4>
+                  <a href="http://www.mirovideoconverter.com/">Miro Video Converter</a> is a tool that will convert video files between nearly any formats.  This comes in handy when designing a compatibility solution for HTML5 videos.
+                </p>
               </section>
             </main>
             <footer class="blog-post-footer">
