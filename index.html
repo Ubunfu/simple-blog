@@ -40,6 +40,36 @@
         -->
           <article class="blog-post">
             <header class="blog-post-header clearfix">
+              <h2 class="blog-post-title">Custom Data Attributes</h2>
+              <time class="blog-post-time" datetime="2017-10-08T01:40" pubdate>October 8, 2017 @ 01:40</time>
+            </header>
+            <main class="blog-post-main">
+              <p>
+                Custom data attributes can be used to add custom pieces of data to existing elements.  They are completely ignored and unhandled by the browser, so we are left to implement functionality with them ourselves.  We usually do this with Javascript.
+              </p>
+              <p>
+                For example, say I have this figure here:
+              </p>
+              <figure>
+                <img class="data-image" data-hidden-message="X marks the spot!" src="http://lorempixel.com/600/300/" alt="">
+              </figure>
+              <p>
+                I have added a custom addritbute to it that looks like this:
+              </p>
+              <p>
+                <code>data-hidden-message="X marks the spot!"</code>
+              </p>
+              <p>
+                With some Javascript, I can read that value from a selected element, and do something with it, like show an alert message.  Click on it and try it out.
+              </p>
+            </main>
+            <footer class="blog-post-footer">
+              <p></p>
+            </footer>
+          </article>
+
+          <article class="blog-post">
+            <header class="blog-post-header clearfix">
               <h2 class="blog-post-title">Audio</h2>
               <time class="blog-post-time" datetime="2017-10-07T00:42" pubdate>October 7, 2017 @ 00:42</time>
             </header>
@@ -53,7 +83,7 @@
                 </ul>
               </section>
               <section>
-                <audio controls autoplay loop>
+                <audio controls loop>
                   <source src="res/Dive Break.wav"></source>
                 </audio>
               </section>
@@ -318,7 +348,7 @@
             </header>
             <main class="blog-post-main">
               <figure>
-                <img src="img/bae.PNG" alt="">
+                <img class="tall-img" src="img/bae.PNG" alt="">
                 <figcaption>Ang, the one and only.</figcaption>
               </figure>
 
