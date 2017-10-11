@@ -38,6 +38,35 @@
           article.blog-post>(header.blog-post-header.clearfix>h2.blog-post-title+time.blog-post-time)+main.blog-post-main+(footer.blog-post-footer>p)
 
         -->
+
+          <article class="blog-post">
+            <header class="blog-post-header clearfix">
+              <h2 class="blog-post-title">SVG Graphics</h2>
+              <time class="blog-post-time" datetime="2017-10-11T10:18" pubdate>October 11, 2017 @ 10:18</time>
+            </header>
+            <main class="blog-post-main">
+              <section>
+                <p>
+                  SVG graphics can be used as drop-in replacements for most non-photographic images such as logos or graphics. These should be used whenever possible because they are based on calculated vectors, so they scale infinitely with no loss of definition. You don't have to have multiple versions of your images to support different UIs.
+                </p>
+                <p>
+                  SVGs are nothing more than XML, and are rendered by the browser.  You can pop them open and read/modify the contents, or even paste the SVG code directly in an HTML document. If you do it this way, it's called an "inline SVG".  Inline SVGs are nice because you can style them using CSS like you would any other DOM element in your site.
+                </p>
+              </section>
+              <section>
+                <figure>
+                  <img src="img/svg_sample.svg" alt="" />
+                </figure>
+                <figcaption>A Sample SVG imported using a standard HTML style img tag.</figcaption>
+              </section>
+            </main>
+            <footer class="blog-post-footer">
+              <p>
+
+              </p>
+            </footer>
+          </article>
+
           <article class="blog-post">
             <header class="blog-post-header clearfix">
               <h2 class="blog-post-title">Custom Data Attributes</h2>
@@ -51,7 +80,7 @@
                 For example, say I have this figure here:
               </p>
               <figure>
-                <img class="data-image" data-hidden-message="X marks the spot!" src="http://lorempixel.com/600/300/" alt="">
+                <img class="data-img" data-hidden-message="X marks the spot!" src="img/flower.jpg" alt="">
               </figure>
               <p>
                 I have added a custom addritbute to it that looks like this:

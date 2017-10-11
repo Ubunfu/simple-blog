@@ -35,6 +35,10 @@
   height: 400px;
 }
 
+.blog-post-main .data-img {
+  width: 100%;
+}
+
 .blog-post-main video {
   max-width: 100%;
 }
