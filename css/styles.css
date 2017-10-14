@@ -36,7 +36,11 @@
 }
 
 .blog-post-main .data-img {
-  width: 100%;
+  max-width: 100%;
+}
+
+.blog-post-main .svg-img {
+  max-width: 100%;
 }
 
 .blog-post-main video {
