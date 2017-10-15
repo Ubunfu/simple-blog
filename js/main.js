@@ -16,6 +16,11 @@ $(function(){
     alert(message);
 
   });
+
+  $('.game-button').on('click', function(){
+    var game = $(this).attr('game');
+    playGame(game);
+  });
 });
 
 
@@ -136,4 +141,75 @@ var i = 0;
 while (loopArray[i]) {
   console.log("While says [" + i + "]: " + loopArray[i]);
   i++;
+}
+
+/*
+  Play a game!
+  Pass in the name of a game, and this function will run it!
+*/
+function playGame(game) {
+
+  switch (game) {
+
+    case "guessANumber":
+      guessANumber();
+      break;
+
+    default:
+      console.log("Couldn't find a game called " + game + ", sorry!");
+  }
+
+}
+
+/*
+  Games
+*/
+
+/*
+  Guess a number
+  This game picks a random number between the thresholds and gives the player some
+  number of chances to guess the right one.
+*/
+function guessANumber() {
+  // Set up the thresholds
+  var min = 1;
+  var max = 10;
+  var maxAttempts = 10;
+
+  // Generate a random number as the answer
+  var answer = getRandomInt(min, max);
+  console.log("Answer is: " + answer);
+
+  // Initial prompt for answer
+  // This counts as the first guess, so init the counter to 1, not 0
+  var guess = prompt("Guess a number between " + min + " and " + max);
+
+  var i = 1;
+  while(i < maxAttempts) {
+
+    if(guess == answer) {
+      alert("You guessed it!");
+      break;
+    } else {
+      prompt("Nope, guess again!");
+    }
+    i++;
+  }
+
+  // If the player ran out of attempts, they lose
+  if(i >= maxAttempts) {
+    alert("You lose!");
+  }
+
+}
+
+/*
+  Game Utilities
+  This takes the pain out of generating a random integer
+*/
+function getRandomInt(min, max) {
+
+  var delta = (max + 1) - min;
+  return Math.floor(Math.random() * delta) + min;
+
 }
